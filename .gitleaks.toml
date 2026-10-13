@@ -1,0 +1,10 @@
+title = "Lab CA Gitleaks config"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "acme-api-key"
+description = "Acme API key"
+regex = '''acme_live_[A-Za-z0-9]{32}'''
+keywords = ["acme_live_"]
